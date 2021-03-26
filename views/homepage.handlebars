@@ -1,0 +1,14 @@
+<!-- Loop over each object in the projects array and dislpay them in homepage-->
+{{#each blogs as |blog| }}
+<div class="card m-4">
+    <div class="card-header text-white bg-dark">
+        {{ title }}
+        <div class="text-end">
+            Posted by User on Date
+        </div>
+    </div>
+    <div class="card-body">
+        {{ description }}
+    </div>
+</div>
+{{/each}}
