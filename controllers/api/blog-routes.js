@@ -3,11 +3,11 @@ const { Blog } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // route to create new blog
-router.post('/', withAuth, async (req, res) => {
+router.post('/', async (req, res) => {
     try {
       const newBlog = await Blog.create({
         ...req.body,
-        user_id: req.session.user_id,
+        // user_id: req.session.user_id,
       });
   
       res.status(200).json(newBlog);
@@ -17,12 +17,12 @@ router.post('/', withAuth, async (req, res) => {
   });
 
 //   route to delete blog
-router.delete('/:id', withAuth, async (req, res) => {
+router.delete('/:id', async (req, res) => {
     try {
       const blogData = await Blog.destroy({
         where: {
           id: req.params.id,
-          user_id: req.session.user_id,
+        //   user_id: req.session.user_id,
         },
       });
   
