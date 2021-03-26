@@ -1,7 +1,6 @@
 [
     {
         "title": "How to work with handlebars.js",
-        "post_date": "2021/21/03",
         "description": "Handlebars takes a template with the variables and compiles it into a function. This function is then executed by passing a JSON object as an argument. This JSON object is known as context and it contains the values of the variables used in the template",
         "user_id": 1
     }
