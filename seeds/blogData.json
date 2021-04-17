@@ -3,5 +3,10 @@
         "title": "How to work with handlebars.js",
         "description": "Handlebars takes a template with the variables and compiles it into a function. This function is then executed by passing a JSON object as an argument. This JSON object is known as context and it contains the values of the variables used in the template",
         "user_id": 1
+    },
+    {
+        "title": "Why MVC is so important",
+        "description": "MCV allows developers to maintain a true separation of concerns, devising their code between the Model layer for data, the View layer for design, and the Controller layer for application logic.",
+        "user_id": 2
     }
 ]
